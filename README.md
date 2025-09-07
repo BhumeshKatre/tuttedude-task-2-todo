@@ -1,7 +1,10 @@
-
 # To-Do App
 
 A simple and modern To-Do application built with React and Vite. This app allows users to add, edit, and delete tasks, with all data persisted in the browser's local storage. The UI is styled using Tailwind CSS for a clean and responsive experience.
+
+## Live Demo
+
+[View the deployed app here](https://tutedude-task-todo-app.netlify.app/)
 
 ## Features
 
@@ -32,11 +35,15 @@ A simple and modern To-Do application built with React and Vite. This app allows
 2. **Install dependencies:**
    ```sh
    npm install
+   # or
+   yarn install
    ```
 
 3. **Start the development server:**
    ```sh
    npm run dev
+   # or
+   yarn dev
    ```
 
 4. Open [http://localhost:5173](http://localhost:5173) in your browser to view the app.
@@ -79,4 +86,4 @@ This project is for educational purposes.
 
 ---
 
-Built with ❤️ using React, Vite, Tailwind CSS
+Built with ❤️ using React, Vite, and Tailwind
