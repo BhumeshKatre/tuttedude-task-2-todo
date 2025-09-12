@@ -11,7 +11,7 @@ const ToDoApp = () => {
   };
 
   const handleSubmit = () => {
-    if (!newInput) {
+    if (!newInput || newInput.trim()=="") {
       alert("Please Enter Task...");
       return
     };
@@ -50,7 +50,7 @@ const ToDoApp = () => {
   return (
     <div className=" mt-6">
       <div className="  p-4">
-        <div className=" flex justify-center gap-4  bg-amber-200 w-full p-4 rounded-md">
+        <div className="flex justify-center gap-4  bg-amber-200 w-full p-4 rounded-md">
           <input
             value={newInput}
             onChange={handleChange}
@@ -67,8 +67,8 @@ const ToDoApp = () => {
           </button>
         </div>
         <div className="flex justify-center  mt-5 rounded-md">
-          <div className="flex justify-between gap-5 bg-sky-200 w-full p-3 rounded-md h-[63vh]">
-            <div className="w-[50%] overflow-y-auto hide-scrollbar ">
+          <div className="md:flex justify-between gap-5 bg-sky-200 w-full p-3 rounded-md md:h-[63vh]">
+            <div className="md:w-[50%] overflow-y-auto hide-scrollbar ">
               <h1 className="py-4 font-bold">Your Todoss</h1>
               {todos ? (
                 todos.map((todo, indx) => (
@@ -97,7 +97,7 @@ const ToDoApp = () => {
                 </div>
               )}
             </div>
-            <div className=" w-[50%] bg-blue-200 mt-5 px-6">
+            <div className=" md:w-[50%] bg-blue-200 mt-5 px-6">
               <h2  className="font-bold text-2xl">Note</h2>
               <ul style={{ listStyleType: 'disc' }}>
                 <li>Tasks are saved locally and persist across browser refreshes.</li>
