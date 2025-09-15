@@ -70,7 +70,7 @@ const ToDoApp = () => {
           <div className="md:flex justify-between gap-5 bg-sky-200 w-full p-3 rounded-md md:h-[63vh]">
             <div className="md:w-[50%] overflow-y-auto hide-scrollbar ">
               <h1 className="py-4 font-bold">Your Todoss</h1>
-              {todos ? (
+              {todos  ? (
                 todos.map((todo, indx) => (
                   <div
                     key={indx}
@@ -85,8 +85,7 @@ const ToDoApp = () => {
                         <TiEdit />
                       </button>
                       <button onClick={() => handleDeletebtn(indx)}>
-                        {" "}
-                        <MdDelete />{" "}
+                        <MdDelete />
                       </button>
                     </div>
                   </div>
